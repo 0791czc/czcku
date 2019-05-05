@@ -1,0 +1,42 @@
+<!--index.wxml-->
+<!-- 主体内容 -->
+<view class='con'>
+  <!-- 轮播 -->
+  <swiper
+    indicator-dots="{{indicatorDots}}"
+    autoplay="{{autoplay}}"
+    interval="{{interval}}"
+    duration="{{duration}}"
+    circular="{{circular}}"
+  >
+    <block wx:for="{{imgUrls}}" wx:key="{{indexx}}">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image" width="100%" height="150" />
+      </swiper-item>
+    </block>
+  </swiper>
+  <!-- 课程分类导航 -->
+  <view class="classifyTab">
+    <view wx:for="{{curriculum}}" wx:key="{{index}}" class='curriculum' data-item="{{item}}" bindtap="click">
+      <image src="{{item.imgUrl}}"></image>
+      <view>{{item.text}}</view>
+    </view>
+  </view>
+  <!-- 课程分类具体内容 -->
+  <view class="classifyCon">
+    <view wx:for="{{curriculum}}" wx:key="{{index}}" class=''>
+      <view class="title">
+        <text class="txt">{{item.text}}</text>
+        <text class="more" data-item="{{item}}" bindtap="click">查看更多></text>
+      </view>
+      <view class="con">
+        <view class="course" wx:for="{{item.con}}" wx:key="{{index}}" data-index="{{item.conI}}" data-video="{{videoData}}" bindtap="join">
+          <image src="{{item.imgUrl}}"></image>
+          <view>{{item.text}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <!-- 技术支持 -->
+  <view class="boss">风月笑平生&&webCZC提供技术支持</view>
+</view>

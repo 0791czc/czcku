@@ -1,0 +1,33 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/index/detail/detail",
+    "pages/user/user",
+    "pages/user/detail/detail",
+    "pages/list/list",
+    "pages/video/video"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "博文在线教育",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#F0FFF0",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "课程",
+      "iconPath": "/images/课程.png",
+      "selectedIconPath": "/images/课程1.png"
+    },
+    {
+      "pagePath": "pages/user/user",
+      "text": "我的",
+      "iconPath": "/images/我的.png",
+      "selectedIconPath": "/images/我的1.png"
+    }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

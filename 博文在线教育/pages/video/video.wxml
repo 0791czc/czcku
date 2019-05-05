@@ -1,0 +1,73 @@
+<!--pages/video/video.wxml-->
+<video src="{{videoSrc}}"></video>
+<view class="content">
+    <!-- tab栏切换 -->
+    <view class="tab">
+        <view class="{{isOn==1?'on':''}}" bindtap="qiehuan" data-i="1">详细内容</view>
+        <view class="{{isOn==2?'on':''}}" bindtap="qiehuan" data-i="2">评论</view>
+        <view class="{{isOn==3?'on':''}}" bindtap="qiehuan" data-i="3">课程目录</view>
+    </view>
+    <view class="con">
+        <view class="xxnr {{isOn==1?'on':''}}" bindtap="qiehuan" data-i="1">
+            <view class="title">{{xxnrTitle}}</view>
+            <view class="zjr">主讲人：{{zjr}}</view>
+            <view class="sskc">
+                <text>所属课程：{{videoData.sskc}}</text>
+            </view>
+            <image class="star" bindtap="clooect" src="{{isClooect}}" ></image>
+        </view>
+        <view class="pl {{isOn==2?'on':''}}" bindtap="qiehuan" data-i="2">
+            <!-- 评论内容盒子 -->
+            <view class="plbox">
+                <!-- 用户信息 -->
+                <view class="user">
+                    <view class="userUrl"><open-data type="userAvatarUrl"></open-data></view>
+                    <open-data class="username" type="userNickName"></open-data>
+                </view>
+                <!-- 评论内容 -->
+                <view class="plcon">
+                    风月老师讲的课确实不错！
+                </view>
+                <view class="user">
+                    <view class="userUrl"><open-data type="userAvatarUrl"></open-data></view>
+                    <open-data class="username" type="userNickName"></open-data>
+                </view>
+                <!-- 评论内容 -->
+                <view class="plcon">
+                    风月老师讲的课确实不错！
+                </view>
+                <view class="user">
+                    <view class="userUrl"><open-data type="userAvatarUrl"></open-data></view>
+                    <open-data class="username" type="userNickName"></open-data>
+                </view>
+                <!-- 评论内容 -->
+                <view class="plcon">
+                    风月老师讲的课确实不错！
+                </view>
+                <view class="user">
+                    <view class="userUrl"><open-data type="userAvatarUrl"></open-data></view>
+                    <open-data class="username" type="userNickName"></open-data>
+                </view>
+                <!-- 评论内容 -->
+                <view class="plcon">
+                    风月老师讲的课确实不错！
+                </view>
+                <view class="user">
+                    <view class="userUrl"><open-data type="userAvatarUrl"></open-data></view>
+                    <open-data class="username" type="userNickName"></open-data>
+                </view>
+                <!-- 评论内容 -->
+                <view class="plcon">
+                    风月老师讲的课确实不错！
+                </view>
+                <view class="btn"> 
+                    <input class="inp" type="text" placeholder="请输入评论内容"/>
+                    <button>发送</button>
+                </view>
+            </view>
+        </view>
+        <view class="kcml {{isOn==3?'on':''}}" bindtap="qiehuan" data-i="3">
+            <view class="mulu" wx:for="{{videoData.ml}}" wx:key="{{index}}">{{item.title}}</view>
+        </view>
+    </view>
+</view>

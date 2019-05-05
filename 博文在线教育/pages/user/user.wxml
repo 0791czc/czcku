@@ -1,0 +1,37 @@
+<!--pages/user/user.wxml-->
+<view class="container">
+    <view class="userinfo-avatar">
+      <open-data type="userAvatarUrl" class="userurl"></open-data>
+    </view>
+    <open-data type="userNickName" class="userinfo-nickname"></open-data>
+  <!-- </block> -->
+
+</view>
+<view class='main' bindtap='userDetail' style='border-bottom:10rpx solid #ededed;' data-title="我的课程">
+  <image src='/images/class.png'></image>
+  <text>我的课程</text>
+</view>
+<view class='main' style='border-bottom:2rpx solid #ededed;'>
+  <image src='/images/会员.png'></image>
+  <text>我的会员</text>
+</view>
+<view class='main' bindtap='userDetail' style='border-bottom:2rpx solid #ededed;' data-title="收藏夹">
+  <image src='/images/heart.png'></image>
+  <text>收藏夹</text>
+</view>
+<view class='main' bindtap='userDetail' style='border-bottom:10rpx solid #ededed;' data-title="历史记录">
+  <image src='/images/history.png'></image>
+  <text>历史记录</text>
+</view>
+<view class='main' bindtap='userDetail' style='border-bottom:1rpx solid #ededed;' data-title="帮助中心">
+  <image src='/images/help.png'></image>
+  <text>帮助中心</text>
+</view>
+<view class='main' bindtap='userDetail' style='border-bottom:10rpx solid #ededed;' data-title="关于我们">
+  <image src='/images/about.png'></image>
+  <text>关于我们</text>
+</view>
+<view class='main'  bindtap='userDetail' data-title="联系客服">
+  <image src='/images/WeChat.png'></image>
+  <text>联系客服</text>
+</view>

@@ -1,0 +1,8 @@
+<!--pages/list/list.wxml-->
+<!-- 数据 -->
+<view class="classifyCon">
+    <view wx:for="{{curriculum.con}}" wx:key="{{index}}"  class='con'>
+        <image src="{{item.imgUrl}}"></image>
+        <view>{{item.text}}</view>
+    </view>
+</view>

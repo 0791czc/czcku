@@ -1,0 +1,22 @@
+/* pages/index/detail/detail.wxss */
+.fudao{
+    width: 100%;
+}
+.con{
+    width: 100%;
+}
+.zong{
+    width: 100%;
+    margin: 20rpx 0;
+    display: flex;
+}
+.fenlei{
+    width: 50%;
+    border-radius: 10rpx;
+    text-align: center
+}
+.fenlei .fm{
+    width: 90%;
+    margin: 5%;
+    border-radius: 10rpx;
+}

@@ -1,0 +1,84 @@
+/**index.wxss**/
+/* 轮播 */
+swiper{
+  /* 这里修改轮播图片宽高 */
+  width: 100%;
+  height: 300rpx;
+}
+swiper-item image{
+  width: 100%;
+  height: 100%;
+}
+/* 课程分类导航 */
+.classifyTab{
+  width: 100%;
+  padding: 20rpx;
+  box-sizing: border-box;
+  display: flex;
+}
+.curriculum{
+  width: 120rpx;
+  margin: 0 20rpx;
+  text-align: center;
+  font-size: 12px;
+}
+.curriculum image{
+  width: 100rpx;
+  height: 100rpx;
+}
+/* 课程分类内容 */
+.classifyCon{
+  width: 90%;
+  margin: 20rpx auto;
+}
+.title{
+  width: 100%;
+  margin: 20rpx 0;
+  line-height: 25px;
+}
+.title::after{
+  display: block;
+  content: " ";
+  clear: both;
+}
+/* 课程标题 */
+.classifyCon>view>.title>.txt{
+  font-size: 18px;
+  font-weight: bold;
+}
+/* 查看更多 */
+.classifyCon>view>.title>.more{
+  font-size: 14px;
+  float: right;
+  margin-right: 10rpx;
+}
+/* 详细课程的父级盒子*/
+.classifyCon>view>.con{
+  display: flex;
+  /* justify-content: space-between; */
+}
+/* 详细课程 */
+.classifyCon>view>.con>view{
+  width: 30%;
+  margin-right: 20rpx;
+  text-align: center;
+}
+/* 详细课程图片 */
+.classifyCon>view>.con>view>image{
+  /* 这里修改详细课程图片宽高 */
+  width: 100%; 
+}
+/* 详细课程文字 */
+.classifyCon>view>.con>view>view{
+  font-size: 16px;
+}
+/* 技术支持 */
+.boss{
+  width: 100%;
+  height: 80rpx;
+  background-color: #999;
+  font-size: 10px;
+  color: #dcdcdc;
+  text-align: center;
+  line-height: 80rpx;
+}

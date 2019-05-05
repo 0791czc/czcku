@@ -1,0 +1,18 @@
+/* pages/list/list.wxss */
+/* 课程内容 */
+.classifyCon{
+    display: flex;
+    width: 90%;
+    margin: 20rpx auto;
+}
+.classifyCon .con{
+    width: 30%;
+    margin-right: 20rpx;
+    text-align: center;
+}
+.classifyCon .con image{
+    width: 100%;
+}
+.classifyCon .con view{
+    font-size: 16px;
+}

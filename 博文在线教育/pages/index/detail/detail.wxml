@@ -1,0 +1,11 @@
+<!--pages/index/detail/detail.wxml-->
+<!-- 视频详细页面 -->
+<view class="con">
+    <image class="fudao" src='https://0791czc.github.io/web-czc/fudao.jpg'></image>
+    <view class="zong">
+        <view class="fenlei" wx:for="{{videoData}}" wx:key="{{index}}" bindtap="click" data-data="{{item}}" data-id="{{item.id}}">
+            <image class="fm" src="{{item.fm}}"></image>
+            <view class="title">{{item.title}}</view>
+        </view>
+    </view>
+</view>
